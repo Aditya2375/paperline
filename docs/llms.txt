@@ -1,0 +1,2 @@
+# Paperline
+A paper-only rules laboratory on public hourly candles. Causal next-open fill ledger, adjustable fee and slippage assumptions. Educational historical replay, no account keys or real orders. Hypothetical performance is not investment advice.
