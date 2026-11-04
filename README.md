@@ -18,7 +18,7 @@ A paper-only crossover laboratory. Public hourly candles become an inspectable c
 
 The Coinbase documentation describes up to 300 candles, but the observed default response on 2026-11-04 returned 350. The parser allows a bounded 1,000-row response, validates it, sorts and deduplicates timestamps, excludes open candles, then takes the newest 300 closed candles. Missing hourly intervals stop the run instead of silently changing the strategy clock. No fabricated fallback or bundled market replay is shown as live.
 
-Initial fetch is explicit. Auto-refresh is opt-in, once per hour, only while the tab is visible. Manual repeat requests have a one-minute guard after a successful fetch. Requests time out after 12 seconds. A failed refresh keeps the previous snapshot explicitly stale. The window is recomputed each time; there is no durable running brokerage ledger or account history. This is historical paper replay on recent public data, not real-time execution.
+Initial fetch is explicit. Auto-refresh is opt-in, once per hour, only while the tab is visible. Manual requests have a one-minute guard, including after failures and market switches. Requests time out after 12 seconds. A failed refresh keeps the previous snapshot explicitly stale. The window is recomputed each time; there is no durable running brokerage ledger or account history. This is historical paper replay on recent public data, not real-time execution.
 
 A small recent window is not evidence of profitability. No out-of-sample test, liquidity/partial-fill model, latency model, funding, taxes, shorting or exchange order execution. Fees and slippage are assumptions, not a verified exchange fee schedule. This is educational software, not investment advice.
 
