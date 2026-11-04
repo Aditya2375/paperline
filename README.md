@@ -1,5 +1,9 @@
 # Paperline
 
+Live demo: https://aditya2375.github.io/paperline/
+
+Source: https://github.com/Aditya2375/paperline
+
 A paper-only crossover laboratory. Public hourly candles become an inspectable chart and causal fill ledger. No exchange account, API key, balance endpoint or order routing exists in this project.
 
 ## What runs
